@@ -80,11 +80,17 @@
             margin: 5px;
             width: 100%;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, box-shadow 0.1s, transform 0.1s;
+            box-shadow: 0 4px #999;
         }
 
         input[type="button"]:hover {
             background-color: #218838;
+        }
+
+        input[type="button"]:active {
+            box-shadow: 0 2px #666;
+            transform: translateY(2px);
         }
 
         input[type="text"] {
